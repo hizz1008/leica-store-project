@@ -1,0 +1,139 @@
+/* header */
+header{
+    width: 100%;
+    height: 120px;
+    background: RGB(0, 0, 0);
+}
+/* header content 1 */
+.header_uphill{
+    height: 40px;
+    background-color: rgba(21,21,21,1);
+    color: RGB(116, 116, 116);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 110px;
+
+    text-transform: uppercase;
+    text-align: center;
+    font-size: var(--header-font-size);
+    font-weight:var(--header-font-weight);
+}
+
+/* 아이템 정렬 */
+.header_uphill_contents,
+.header_uphill_contents li >div{
+    display: flex;
+    align-items: center;
+  
+}
+.header_uphill_contents li >div{
+    padding: 0 15px;
+}
+.fa-solid, 
+.fas {
+    padding: 5px;
+}
+/* 아이템 정렬 */
+/* 검색창 */
+.search > input{
+    width: 230px;
+    height: 18px;
+
+    font-size: var(--header-font-size);
+    font-weight: var(--header-font-weight);
+
+    border: none;
+    border-radius: 4px;    
+
+    color: rgba(255, 255, 255, 0.5);
+    background-color: RGB(131, 131, 131);
+}
+.search > input:focus{
+    outline: none;
+}
+/* 검색창 */
+
+/* 스토어 */
+.store{
+    height: 30px;
+
+    color: rgba(255, 255, 255, 1);
+    background-color: RGB(227, 7, 15);
+
+    border-radius: 2px;
+}
+/* 스토어 */
+
+/* header content 1 */
+/* header */
+
+/* main */
+section:not(:nth-child(1)){
+    margin: 0 auto;
+}
+
+/* mian section 1 */
+#hero{
+    width: 100%;
+    height: 700px;
+    background:#088;
+
+}
+
+/* mian section 1 */
+/* mian section 2 */
+#new-product,
+#introduce{
+    padding: 40px 40px 0;
+}
+#new-product > aside{
+    width: 100%;
+    background: #808;
+    height: 370px;
+ 
+}
+.new-product_magazine{
+    background: #008;
+    height: 720px;
+    margin: 0 40px;
+
+}
+.slide-product{
+    background: #077;
+    height: 600px;
+
+}
+/* mian section 2 */
+
+/* mian section 3 */
+.introduce_akademie{
+height: 630px;
+background: #808;
+}
+.introduce_exhibition{
+    height: 630px;
+    background: #999;
+}
+/* mian section 3 */
+/* additional */
+.additional{
+    height: 300px;
+    background: #008;
+}
+/* additional */
+/* main */
+
+/* footer */
+footer{
+    height: 470px;
+    background: #088;
+}
+/* footer */
+:root{
+    --header-font-size:12px;
+    --header-font-weight:700;
+}
+/* font */
