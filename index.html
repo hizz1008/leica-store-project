@@ -1,72 +1,193 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HOME - 라이카 카메라 코리아</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="wrap">
-        <header id="header">
-            <div class="header_uphill">
-                <h1>register a product</h1>
-                <ul class="header_uphill_contents">
-                    <!-- 검색창 -->
-                    <li>
-                        <div class="search">
-                            <input type="search" name="find" value="SEARCH">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </div>
-                     <!-- 검색창 -->
-                    </li>
-                    <li>
-                        <h1>한국어</h1>
-                    </li>
-                    <li>
-                        <div class="login">
-                            <i class="fa-solid fa-user"></i>
-                            <h1>login account</h1>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="store">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <h1>online store</h1>
-                        </div>
-                    </li>
-                </ul>
+      <header id="header">
+        <div class="header_uphill">
+          <div class="header_uphill_inner">
+            <h1>register a product</h1>
+            <ul class="header_uphill_contents">
+              <!-- 검색창 -->
+              <li>
+                <div class="search">
+                  <input
+                    class="search-input default-setting"
+                    type="search"
+                    name="find"
+                    placeholder="SEARCH"
+                    autocomplete="off"
+                  />
+
+                  <i id="search-icon" class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+                <!-- 검색창 -->
+              </li>
+              <li>
+                <div class="language">
+                  <img class="flag" src="img/태극기.png" alt="" />
+                  <h1>한국어</h1>
+                </div>
+              </li>
+              <li>
+                <div class="login">
+                  <i id="user-icon" class="fa-solid fa-user"></i>
+                  <h1>login account</h1>
+                </div>
+              </li>
+              <li>
+                <div class="store">
+                  <i id="cart-icon" class="fa-solid fa-cart-shopping"></i>
+                  <h1>online store</h1>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header_downhill">
+          <div class="header_downhill_inner">
+            <div class="leicaLogo">
+              <img src="img/leicaLogo.png" alt="" />
             </div>
-            <nav></nav>
-        </header>
-        <main id="main">
-            <!-- section 1 -->
-            <section id="hero">
-                <article></article>
-            </section>
-            <!-- section 1 -->
 
-            <!-- section 2 -->
-            <section id="new-product">
-                <aside></aside>
-                <div class="new-product_magazine">1</div>
-            </section>
-            <div class="slide-product">1</div>
-            <!-- section 2 -->
+            <nav id="header_downhill_nav">
+              <ul>
+                <li>
+                  <a sub-alink href="#">회사소개</a>
+                  <ul class="header_downhill_nav_sub-menu">
+                    <li>
+                      <div class="nav_sun-menu_list">
+                        <ul>
+                          <li>라이카 카메라 코리아</li>
+                          <li>공지사항</li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">제품소개</a>
+                </li>
+                <li>
+                  <a href="#">스토어</a>
+                </li>
+                <li>
+                  <a sub-alink href="#">갤러리</a>
+                  <ul class="header_downhill_nav_sub-menu">
+                    <li>
+                      <div class="nav_sun-menu_list">
+                        <ul>
+                          <li>오프라인 갤러리</li>
+                          <li>온라인 갤러리</li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a sub-alink href="#">아카데미</a>
+                  <ul class="header_downhill_nav_sub-menu">
+                    <li>
+                      <div class="nav_sun-menu_list">
+                        <ul>
+                          <li>라이카 아카데미 소개</li>
+                          <li>아카데미 일정</li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a sub-alink href="#">고객센터</a>
+                  <ul class="header_downhill_nav_sub-menu">
+                    <li>
+                      <div class="nav_sun-menu_list">
+                        <ul>
+                          <li>제품등록</li>
+                          <li>다운로드</li>
+                          <li>자료실</li>
+                          <li>제품 체험/상담 예약 서비스</li>
+                          <li>자주하는 질문(FAQ)</li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">세컨드 핸드</a>
+                </li>
+              </ul>
+              <a href="#">
+                <i id="shop-icon" class="fa-solid fa-bag-shopping">
+                  <span>0</span>
+                </i>
+              </a>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main id="main">
+        <!-- section 1 -->
+        <section id="hero">
+          <article>
+            <div class="hero_slide">
+              <img src="img/main-slide-img-01.jpg" alt="" />
+              <img src="img/main-slide-img-02.jpg" alt="" />
+              <img src="img/main-slide-img-03.jpg" alt="" />
+              <img src="img/main-slide-img-04.jpg" alt="" />
+            </div>
+          </article>
+          <ul class="slide-title">
+            <li>
+              <h1>거리를 포착하다<br />Leica-D-Lux 7</h1>
+            </li>
+            <li>
+              <h1>럭셔리 골프웨어와 라이카의 만남</h1>
+            </li>
+            <li>
+              <h1>열정으로 연결되다<br>라이카 패밀리 & 프렌즈</h1></h1>
+            </li>
+            <li>
+              <h1>라이카와 사랑에 빠지는 건 순간이면 충분합니다.</h1>
+            </li>
+            <li>
+              <h1>새로운 전설의 탄생<br>Leica M 11</h1>
+            </li>
+          </ul>
+        </section>
+        <!-- section 1 -->
 
-            <!-- section 3 -->
-            <section id="introduce">
-                <div class="introduce_akademie">1</div>
-                <div class="introduce_exhibition">1</div>
-            </section>
-            <!-- section 3 -->
-            <div class="additional">1</div>
-        </main>
-        <footer></footer>
+        <!-- section 2 -->
+        <section id="new-product">
+          <aside></aside>
+          <div class="new-product_magazine">1</div>
+        </section>
+        <div class="slide-product">1</div>
+        <!-- section 2 -->
+
+        <!-- section 3 -->
+        <section id="introduce">
+          <div class="introduce_akademie">1</div>
+          <div class="introduce_exhibition">1</div>
+        </section>
+        <!-- section 3 -->
+        <div class="additional">1</div>
+      </main>
+      <footer></footer>
     </div>
 
-    <script src="https://kit.fontawesome.com/e8e74eadbe.js" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/e8e74eadbe.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="javascript/search.js"></script>
+  </body>
 </html>

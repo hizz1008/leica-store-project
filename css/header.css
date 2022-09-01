@@ -1,0 +1,250 @@
+/* header */
+header {
+  width: 100%;
+  height: 120px;
+  background: RGB(0, 0, 0);
+}
+/* header uphill */
+.header_uphill {
+  background-color: rgba(21, 21, 21, 1);
+  border-bottom: 1px solid RGB(48, 48, 48);
+}
+.header_uphill_inner {
+  max-width: 1200px;
+  height: 40px;
+
+  color: RGB(116, 116, 116);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 110px;
+
+  text-transform: uppercase;
+  text-align: center;
+  font-size: var(--header-font-size);
+  font-weight: var(--header-font-weight);
+}
+
+/* 아이템 정렬 */
+
+.header_uphill_contents,
+.header_uphill_contents li > div {
+  display: flex;
+  align-items: center;
+
+  font-size: var(--header-font-size);
+  font-weight: var(--header-font-weight);
+}
+.header_uphill_contents li > div {
+  padding: 0 10px;
+}
+
+#cart-icon,
+#user-icon,
+#search-icon {
+  padding: 5px;
+}
+/* 아이템 정렬 */
+/* 검색창 */
+
+.search > input {
+  height: 18px;
+
+  transition: all 0.3s ease-in-out;
+
+  font-size: var(--header-font-size);
+  font-weight: var(--header-font-weight);
+
+  border: none;
+  border-radius: 4px;
+
+  color: rgba(0, 0, 0, 0.6);
+}
+.search > input:focus {
+  outline: none;
+}
+.search > input::placeholder {
+  color: RGB(85, 85, 85);
+  opacity: 1;
+}
+/* 기본 인풋 세팅 */
+.default-setting {
+  width: 68px;
+  background: none;
+}
+/* 기본 인풋 세팅 */
+.search_box {
+  position: absolute;
+  top: 30px;
+  width: 247px;
+  height: 500px;
+  z-index: 39;
+}
+
+.focus {
+  width: 247px;
+  background-color: RGB(132, 132, 132);
+}
+
+/* 검색창 */
+/* 언어 */
+.language {
+  display: flex;
+  align-items: center;
+}
+.flag {
+  padding: 0 5px;
+  width: 15px;
+}
+
+/* 스토어 */
+.store {
+  height: 30px;
+
+  color: rgba(255, 255, 255, 1);
+  background-color: var(--main-red-color);
+
+  border-radius: 2px;
+}
+/* 스토어 */
+
+/* header uphill*/
+
+/* header downhill */
+.header_downhill {
+  width: 100%;
+  position: relative;
+
+  border-bottom: 1px solid RGB(48, 48, 48);
+}
+.header_downhill_inner {
+  max-width: 1200px;
+  height: 79px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* header_downhill_logo */
+.leicaLogo {
+  display: flex;
+  align-items: center;
+
+  left: 40px;
+}
+.leicaLogo img {
+  width: 50px;
+}
+/* header_downhill_logo */
+
+/* header_downhill_nav*/
+#header_downhill_nav {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-left: 40px;
+}
+#header_downhill_nav > ul {
+  display: flex;
+  height: 80%;
+}
+/* header_downhill_nav_font-setting */
+#header_downhill_nav > ul > li {
+  height: 100%;
+  padding: 0 10px;
+
+  font-size: 14px;
+
+  letter-spacing: -1px;
+}
+/* header_downhill_nav_font-setting */
+
+#header_downhill_nav ul > li > a {
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#header_downhill_nav ul > li > a:hover {
+  color: var(--main-red-color);
+}
+/* header shop icon start*/
+#shop-icon {
+  color: white;
+  font-size: 22px;
+  position: relative;
+}
+#shop-icon > span {
+  position: absolute;
+  top: -2px;
+  right: -15px;
+
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  background-color: var(--main-red-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 12px;
+}
+#header_downhill_nav ul > li:hover > ul {
+  height: 80px;
+}
+
+/* header shop icon end*/
+
+/* header_downhill_nav end*/
+.header_downhill_nav_sub-menu {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+
+  background-color: rgb(0, 0, 0);
+}
+.nav_sun-menu_list ul > li:hover {
+  color: var(--main-red-color);
+}
+
+.header_downhill_nav_sub-menu > li {
+  margin: 0 auto;
+  height: 80px;
+
+  max-width: 1200px;
+  padding: 0 40px;
+}
+.nav_sun-menu_list {
+  padding: 0 100px;
+  height: 100%;
+}
+.nav_sun-menu_list ul {
+  display: flex;
+  align-items: center;
+
+  height: 100%;
+}
+.nav_sun-menu_list ul > li {
+  padding-right: 10px;
+  color: white;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease-in-out;
+}
+/* header downhill end*/
+
+/* header end*/
