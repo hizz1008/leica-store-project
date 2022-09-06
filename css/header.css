@@ -151,6 +151,8 @@ header {
   align-items: center;
   justify-content: space-between;
 
+  z-index: 1;
+
   margin-left: 40px;
 }
 #header_downhill_nav > ul {
