@@ -33,7 +33,7 @@
               </li>
               <li>
                 <div class="language">
-                  <img class="flag" src="img/태극기.png" alt="" />
+                  <img class="flag" src="img/headerImg/태극기.png" alt="" />
                   <h1>한국어</h1>
                 </div>
               </li>
@@ -55,7 +55,7 @@
         <div class="header_downhill">
           <div class="header_downhill_inner">
             <div class="leicaLogo">
-              <img src="img/leicaLogo.png" alt="" />
+              <img src="img/headerImg/leicaLogo.png" alt="" />
             </div>
 
             <nav id="header_downhill_nav">
@@ -139,13 +139,18 @@
         <section id="hero">
           <article>
             <div class="hero_slide">
-              <img src="img/main-slide-img-01.jpg" alt="" />
-              <img src="img/main-slide-img-02.jpg" alt="" />
-              <img src="img/main-slide-img-03.jpg" alt="" />
-              <img src="img/main-slide-img-04.jpg" alt="" />
+              <ul class="hero_slides_container">
+                <li><img src="img/section1/main-slide-img-01.jpg" alt="거리를 포착하다 Leica-D-Lux 7"></li>
+                <li><img src="img/section1/main-slide-img-02.jpg" alt="럭셔리 골프웨어와 라이카의 만남"></li>
+                <li><img src="img/section1/main-slide-img-03.jpg" alt="열정으로 연결되다 라이카 패밀리 & 프렌즈"></li>
+                <li><img src="img/section1/main-slide-img-04.jpg" alt="라이카와 사랑에 빠지는 건 순간이면 충분합니다."></li>
+                <li><img src="img/section1/main-slide-img-02.jpg" alt="새로운 전설의 탄생 Leica M 11"></li>
+              </ul>
+            </div>
+
             </div>
           </article>
-          <ul class="slide-title">
+          <ul class="hero_slide-title">
             <li>
               <h1>거리를 포착하다<br />Leica-D-Lux 7</h1>
             </li>
@@ -167,10 +172,30 @@
 
         <!-- section 2 -->
         <section id="new-product">
-          <aside></aside>
-          <div class="new-product_magazine">1</div>
+          <aside><img src="img/mainImg/wide_web.jpeg" alt=""></aside>
+          <div class="new-product_magazine">
+            <div class="new-product_magazine_content">
+              <img src="img/mainImg/중간-좌측_1.jpeg" alt="">
+            </div>
+            <div class="new-product_magazine_content">
+              <div class="new-product_magzine_content_top">
+                <img src="img/mainImg/중간-우측-위_4.jpeg" alt="">
+              </div>
+              <div class="new-product_magzine_content_bottom">
+                <img src="img/mainImg/중간-우측-위_5.jpeg" alt="">
+              </div>
+            </div>
+            
+          </div>
         </section>
-        <div class="slide-product">1</div>
+        <div class="slide-product">
+            <ul class="slide-product_slides_container">
+              <li><img src="img/section2/item_banner_web_5.jpeg" alt=""></li>
+              <li><img src="img/section2/item_banner_web_6.jpeg" alt=""></li>
+              <li><img src="img/section2/item_banner_web_7.jpeg" alt=""></li>
+              <li><img src="img/section2/item_banner_web_5.jpeg" alt=""></li>
+            </ul>
+        </div>
         <!-- section 2 -->
 
         <!-- section 3 -->
@@ -188,6 +213,9 @@
       src="https://kit.fontawesome.com/e8e74eadbe.js"
       crossorigin="anonymous"
     ></script>
-    <script src="javascript/search.js"></script>
+
   </body>
+  <script src="javascript/slides.js"></script>
+  <script src="javascript/search.js"></script>
+
 </html>

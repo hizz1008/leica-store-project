@@ -80,7 +80,7 @@ header {
   top: 30px;
   width: 247px;
   height: 500px;
-  z-index: 39;
+
 }
 
 .focus {
@@ -116,8 +116,6 @@ header {
 .header_downhill {
   width: 100%;
   position: relative;
-
-  border-bottom: 1px solid RGB(48, 48, 48);
 }
 .header_downhill_inner {
   max-width: 1200px;
@@ -210,6 +208,7 @@ header {
 /* header_downhill_nav end*/
 .header_downhill_nav_sub-menu {
   position: absolute;
+  top: 100%;
   left: 0;
   width: 100%;
   height: 0px;
@@ -217,6 +216,7 @@ header {
   transition: all 0.2s ease-in-out;
 
   background-color: rgb(0, 0, 0);
+  border-top: 1px solid RGB(48, 48, 48);
 }
 .nav_sun-menu_list ul > li:hover {
   color: var(--main-red-color);

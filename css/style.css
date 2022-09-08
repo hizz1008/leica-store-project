@@ -1,4 +1,6 @@
 @import url('header.css');
+@import url('section1.css');
+
 a {
   text-decoration: none;
   color: white;
@@ -9,79 +11,88 @@ section:not(:nth-child(1)) {
   margin: 0 auto;
 }
 
-/* mian section 1 */
-#hero {
-  width: 100%;
-}
 
-.hero_slide {
-  display: flex;
-  position: relative;
-  max-width: 100%;
-  overflow: hidden;
-  left: 0%;
-}
-.hero_slid.animated {
-  transition: left 0.3s ease-in;
-}
-
-.slide-title {
-  width: 100%;
-  height: 110px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  margin: 0 auto;
-}
-.slide-title > li {
-  display: flex;
-  font-size: 15px;
-  font-weight: var(--header-font-weight);
-  padding: 10px 29px;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 200px;
-  height: 88px;
-
-  border-bottom: 1px solid rgb(225, 225, 225);
-}
-.slide-title > li:nth-child(1) {
-  border-bottom: 1px solid var(--main-red-color);
-  color: var(--main-red-color);
-}
-.slide-title > li:not(:nth-child(1))::before {
-  width: 1px;
-  height: 34px;
-  content: '';
-  display: block;
-  position: absolute;
-  top: 35%;
-  left: 0;
-  background-color: rgb(225, 225, 225);
-}
-
-/* mian section 1 */
 /* mian section 2 */
+#new-product{
+  margin-bottom: 40px;
+}
 #new-product,
 #introduce {
-  padding: 40px 40px 0;
+  padding: 40px 80px 0;
 }
 #new-product > aside {
   width: 100%;
-  background: #808;
-  height: 370px;
+  padding-bottom: 40px;
+}
+aside img{
+  width: 100%;
+  object-fit: cover;
 }
 .new-product_magazine {
-  background: #008;
+  display: flex;
+  width: 100%;
   height: 720px;
-  margin: 0 40px;
 }
+.new-product_magazine_content{
+  width: 100%;
+  height: 100%;
+}
+.new-product_magazine_content:nth-child(1){
+  padding-right: 40px;
+}
+.new-product_magazine_content:nth-child(2){
+  display: grid;
+  grid-template-rows: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 40px;
+
+}
+.new-product_magazine_content img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.new-product_magzine_content_top{
+  height: 100%;
+}
+.new-product_magzine_content_top img{
+  width: 100%;
+  object-fit: cover;
+
+}
+.new-product_magzine_content_bottom{
+  height: 100%;
+}
+.new-product_magzine_content_bottom img{
+  width: 100%;
+  object-fit: cover;
+}
+
 .slide-product {
-  background: #077;
+  width: 100%;
   height: 600px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    transparent,
+    transparent,
+    rgba(0,0,0,0.1)95%
+  )white;
+
+  overflow: hidden;
+}
+.slide-product_slides_container{
+  display: flex;
+  position: relative;
+  left: 0%;
+  height: 100%;
+}
+.slide-product_slides_container >li{
+  padding: 0 20px;
+  width: 100vw;
+  height: 100%;
+}
+.slide-product_slides_container >li >img{
+  object-fit: cover;
 }
 /* mian section 2 */
 

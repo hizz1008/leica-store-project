@@ -1,0 +1,65 @@
+/* mian section 1 */
+#hero {
+    width: 100%;
+  }
+  
+  .hero_slide{
+  overflow: hidden;
+  }
+  .hero_slides_container{
+    display: flex;
+    position: relative;
+  
+    transition: left 0.5s ease-in-out;
+  
+    width: 500vw;
+  
+    left: 0%;
+  }
+  .hero_slides_container li img{
+    object-fit: cover;
+    width: 100%;
+  }
+  
+  
+  .hero_slide-title {
+    width: 100%;
+    height: 110px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    margin: 0 auto;
+  }
+  .hero_slide-title > li {
+    display: flex;
+    font-size: 15px;
+    font-weight: var(--header-font-weight);
+    padding: 10px 29px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 200px;
+    height: 88px;
+  
+    border-bottom: 1px solid rgb(225, 225, 225);
+  }
+  
+  .active{
+    border-bottom: 1px solid var(--main-red-color);
+    color: var(--main-red-color);
+  
+  }
+  .hero_slide-title > li:not(:nth-child(1))::before {
+    width: 1px;
+    height: 34px;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 35%;
+    left: 0;
+    background-color: rgb(225, 225, 225);
+  }
+  
+  /* mian section 1 */
