@@ -29,7 +29,10 @@
   align-items: center;
   justify-content: center;
 
-  margin: 0 auto;
+  max-width: 1280px;
+  margin:0 auto;
+
+  border-bottom: 1px solid rgb(225, 225, 225);
 }
 .hero_slide-title > li {
   display: flex;
@@ -42,7 +45,7 @@
   width: 200px;
   height: 88px;
 
-  border-bottom: 1px solid rgb(225, 225, 225);
+
 }
 
 .active {
