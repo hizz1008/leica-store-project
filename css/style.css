@@ -13,15 +13,52 @@ section:not(:nth-child(1)) {
 }
 
 /* mian section 3 */
-.introduce_akademie {
-  height: 630px;
+#introduce {
   max-width: 1280px;
-  margin: 0 auto;
-  background: #808;
+  margin: 106px auto;
 }
+.introduce_title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.introduce_title :nth-child(1) {
+  font-size: 28px;
+  font-weight: var(--header-font-weight);
+}
+.introduce_title :nth-child(2) {
+  font-size: 28px;
+  font-weight: var(--header-font-weight);
+  color: var(--main-red-color);
+}
+.introduce_content {
+  display: flex;
+  height: 800px;
+}
+.introduce_akademie {
+  width: 60%;
+}
+
+.introduce_akademie img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 .introduce_exhibition {
-  height: 630px;
+  width: 40%;
+  overflow: auto;
   background: #999;
+}
+.introduce_exhibition::-webkit-scrollbar {
+  display: none;
+}
+.introduce_exhibition_content {
+  position: relative;
+  top: -50px;
+  height: 1000vh;
+  font-size: 500px;
+  display: flex;
 }
 /* mian section 3 */
 /* additional */
