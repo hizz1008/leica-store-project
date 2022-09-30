@@ -99,12 +99,12 @@ function prevMove() {
 slideProduct.addEventListener('mousedown', (e) => {
   pressed = true;
   startX = e.offsetX - slideProductUl.offsetLeft;
-  slideProductUl.style.transition = 'none';
+  slideProductUl.classList.remove('slide-product_animated');
 });
 
 window.addEventListener('mouseup', () => {
   pressed = false;
-  slideProductUl.style.transition = 'all 0.5s ease-out';
+  slideProductUl.classList.add('slide-product_animated');
 });
 
 slideProduct.addEventListener('mousemove', (e) => {
