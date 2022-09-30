@@ -80,6 +80,7 @@ header {
   top: 30px;
   width: 247px;
   height: 500px;
+
 }
 
 .focus {
@@ -172,7 +173,6 @@ header {
   height: 100%;
   display: flex;
   align-items: center;
-  color: white;
 }
 #header_downhill_nav ul > li > a:hover {
   color: var(--main-red-color);
