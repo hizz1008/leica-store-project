@@ -79,7 +79,7 @@ function nextMove() {
   }
 }
 //드래그 슬라이드를 5s 뒤에 자동으로 넘어가게 실행
-setInterval(nextMove, 5000);
+// setInterval(nextMove, 5000);
 
 function prevMove() {
   slideProductCurrentIdx--;
