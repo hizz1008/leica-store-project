@@ -1,0 +1,130 @@
+/* mian section 3 */
+#introduce {
+  max-width: 1280px;
+  margin: 106px auto;
+}
+.introduce_title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.introduce_title :nth-child(1) {
+  font-size: 28px;
+  font-weight: var(--header-font-weight);
+}
+.introduce_title :nth-child(2) {
+  font-size: 28px;
+  font-weight: var(--header-font-weight);
+  color: var(--main-red-color);
+}
+.introduce_content {
+  display: flex;
+  height: 800px;
+}
+.introduce_akademie {
+  width: 60%;
+}
+
+.introduce_akademie img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.introduce_exhibition {
+  width: 40%;
+  overflow: auto;
+
+  margin-left: 40px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+.introduce_exhibition::-webkit-scrollbar {
+  display: none;
+}
+.introduce_exhibition_content {
+  position: relative;
+
+  display: flex;
+}
+
+.introduce_exhibition_content::before {
+  position: absolute;
+
+  content: '';
+
+  width: 1px;
+  height: 100%;
+  left: 44px;
+
+  background-color: rgb(235, 235, 235);
+}
+
+.introduce_exhibition_content ul {
+  width: 100%;
+}
+.introduce_exhibition_li {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0 0;
+}
+.introduce_exhibition_li a {
+  display: flex;
+  color: black;
+  border-bottom: 1px solid rgba(132, 132, 132, 0.2);
+  padding-bottom: 40px;
+}
+.introduce_exhibition_li img {
+  object-fit: cover;
+  max-height: 200px;
+}
+
+.introduce_exhibition_day {
+  font-weight: var(--header-font-weight);
+  position: relative;
+}
+.introduce_exhibition_day::before {
+  width: 7px;
+  height: 7px;
+
+  top: 7px;
+  left: 41px;
+
+  content: '';
+  display: block;
+  position: absolute;
+
+  border-radius: 50%;
+  background-color: var(--main-red-color);
+}
+.introduce_exhibition_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  line-height: 25px;
+
+  max-width: 140px;
+  padding-right: 45px;
+}
+
+.introduce_exhibition_title h1 {
+  font-weight: 700;
+  font-size: 18px;
+}
+.introduce_exhibition_title i {
+  color: var(--main-red-color);
+}
+.details {
+  font-size: 14px;
+  font-weight: 400;
+
+  color: var(--main-gray-color);
+}
+.location {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* mian section 3 */
